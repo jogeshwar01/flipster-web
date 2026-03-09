@@ -1,0 +1,58 @@
+1) spec
+
+curl 'https://api.flipster.io/api/v2/snapshot/specs?showAll=true' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US' \
+  -b 'ajs_anonymous_id=d0a53288-10c9-4d87-b98c-f4145aabe031; referral_path=/trade/perpetual/BTCUSDT.PERP; __cf_bm=dKJgqWBwoiGOdjQglsRxUID_9XlpPPIPb6kDeSaaTqk-1772957004.9411275-1.0.1.1-Z52f1E1L8Hcu6P5Fuhzja.9jYKnBg5cmavtId8tM2ezU4tLiCbTSTqh6Mj4lGbGjXEeZ9vFe0Du13lbYaT.H4pilO37SFgE85zQCGGgdO5x.dwKNVPh.muRiScZ24MDc' \
+  -H 'if-modified-since: Sun, 08 Mar 2026 08:03:23 GMT' \
+  -H 'origin: https://flipster.io' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://flipster.io/' \
+  -H 'sec-ch-ua: "Not:A-Brand";v="99", "Brave";v="145", "Chromium";v="145"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'sec-gpc: 1' \
+  -H 'traceparent: 00-0000000000000000b26ca606581dd7af-6ed8d019ee9f5454-01' \
+  -H 'tracestate: dd=s:1;o:rum' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36' \
+  -H 'x-datadog-origin: rum' \
+  -H 'x-datadog-parent-id: 7987362748937753684' \
+  -H 'x-datadog-sampling-priority: 1' \
+  -H 'x-datadog-trace-id: 12856833582414288815' \
+  -H 'x-prex-client-platform: web' \
+  -H 'x-prex-client-version: release-web-3.10.110'
+
+2) klines
+
+curl 'https://api.flipster.io/api/v2/chart/klines/BTCUSDT.PERP/5/1772820000-1772969700?priceType=MID' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US' \
+  -H 'origin: https://flipster.io' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://flipster.io/' \
+  -H 'sec-ch-ua: "Not:A-Brand";v="99", "Brave";v="145", "Chromium";v="145"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'sec-gpc: 1' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36'
+
+3) socket
+curl 'wss://api.flipster.io/api/v2/stream/r230522-public?mode=subscription' \
+  -H 'Upgrade: websocket' \
+  -H 'Origin: https://flipster.io' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Accept-Language: en-GB,en;q=0.9' \
+  -H 'Pragma: no-cache' \
+  -H 'Connection: Upgrade' \
+  -H 'Sec-WebSocket-Key: mQbPg1v1DewaT6LBpwGMhA==' \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36' \
+  -H 'Sec-WebSocket-Version: 13' \
+  -H 'Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits'
+
+

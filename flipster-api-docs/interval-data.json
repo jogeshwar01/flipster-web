@@ -1,0 +1,73 @@
+{
+	"s": {
+		"market/interval-data": {
+			"rows": []
+		},
+		"market/pswaps": {
+			"rows": []
+		},
+		"market/spots": {
+			"rows": []
+		},
+		"market/pswap-details": {
+			"rows": ["BTCUSDT.PERP"]
+		},
+		"market/spot-details": {
+			"rows": []
+		},
+		"market/currency-details": {
+			"rows": []
+		},
+		"market/tickers": {
+			"rows": ["BTCUSDT.PERP"]
+		},
+		"market/spot-tickers": {
+			"rows": []
+		},
+		"market/orderbooks": {
+			"rows": []
+		},
+		"market/orderbooks-v2": {
+			"rows": ["BTCUSDT.PERP"]
+		},
+		"private/account": {
+			"rows": []
+		},
+		"private/pswaps": {
+			"rows": []
+		},
+		"private/spots": {
+			"rows": []
+		},
+		"private/margins": {
+			"rows": []
+		},
+		"private/orders": {
+			"rows": []
+		},
+		"private/spot-orders": {
+			"rows": []
+		},
+		"private/positions": {
+			"rows": []
+		},
+		"private/wallets": {
+			"rows": []
+		}
+	},
+	"t": {
+		"market/pswap-details": {
+			"s": {
+				"BTCUSDT.PERP": {
+					"indexPrice": "67219.6",
+					"midPrice": "67186.15",
+					"askPrice": "67186.2",
+					"bidPrice": "67186.1",
+					"bboPriceTimestamp": 1772957737081571895,
+					"isTradable": true
+				}
+			}
+		}
+	},
+	"p": "1772957737253476777"
+}

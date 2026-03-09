@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@theme {
+  --color-border: #222;
+  --color-primary-gradient: linear-gradient(90deg, #0a84ff 0%, #0066cc 100%);
+  --color-interactive-secondary-bg: rgba(10, 132, 255, 0.12);
+  --color-interactive-link: #0a84ff;
+  --color-newgrey-900: #111;
+  --color-newgrey-800: #1a1a1a;
+  --color-newgrey-100: #999;
+  --color-newgrey-50: #f5f5f5;
+  --color-primary: #0a84ff;
+  --color-background: #111;
+  --color-green: #34c759;
+  --color-red: #ff3b30;
+  --text-sm: 10.5px;
+  --text-md: 12px;
+  --text-lg: 13.5px;
+  --text-xl: 15px;
+  --color-main-bg: #000;
+  --color-container-bg: #111;
+  --color-container-bg-hover: #222;
+  --color-container-bg-selected: #222;
+  --color-container-bg-tweet: #1a1a1a;
+  --color-container-border: #111;
+  --color-tooltip-bg: #222;
+  --color-tab-selected-bg: #222;
+  --color-card-border-hover: #333;
+  --color-fuel-table-header-bg: #111;
+  --color-fuel-table-row-bg: #1a1a1a;
+  --color-button-border: #222;
+  --color-button-disabled: #222;
+  --color-border-2: #222;
+  --color-button-secondary-bg: #222;
+  --color-button-secondary-bg-hover: #333;
+  --color-button-secondary-stroke-hover: #222;
+  --color-button-secondary-selected: #333;
+  --color-tabs-selected: #222;
+  --color-tabs-hover: #222;
+  --color-tabs-default-fill: #1a1a1a;
+  --color-chip-default-bg: #222;
+  --color-chip-default-text: #fff;
+  --color-connect-button-icon-background: #111;
+  --color-connect-button-icon-border: #111;
+  --color-status-neutral-bg: #999;
+  --color-status-neutral-text: #111;
+  --color-feedback-button: #999;
+  --color-button-border-hover: rgba(10, 132, 255, 0.3);
+  --color-input-bg: #222;
+  --color-input-bg-hover: #333;
+  --color-input-border: #333;
+  --color-stroke-secondary: #222;
+  --color-scroll-bar: #1a1a1a;
+  --color-text-default: #fff;
+  --color-text-selected: #111;
+  --color-text-inverted-selected: #000000;
+  --color-text-secondary: #999;
+  --color-text-tertiary: #666;
+  --color-text-disabled: #444;
+  --color-text-emphasis: #fff;
+  --color-text-interactive: #0a84ff;
+  --color-interactive-link: #0a84ff;
+  --color-text-secondary-button: #fff;
+  --color-text-featured-chip: #ffffff;
+  --color-text-gradient-button: #000000;
+  --color-text-negative-red-button: #ff887f;
+  --color-text-positive-green-button: #5dd5a0;
+  --color-text-label: #999;
+  --color-text-input: #fff;
+  --color-text-default-2: #fff;
+  --color-text-primary-button: #ffffff;
+  --color-static-emphasized: #fff;
+  --color-static-default: #999;
+  --color-positive-green: #34c759;
+  --color-positive-green-hover: #34c759;
+  --color-positive-green-pressed: #34c759;
+  --color-negative-red: #ff3b30;
+  --color-negative-red-hover: #ff3b30;
+  --color-negative-red-pressed: #ff3b30;
+  --color-brand-yellow: #f2c94c;
+  --color-brand-yellow-hover: #ffdd75;
+  --color-brand-yellow-pressed: #ffdd75;
+  --color-warn-yellow: #f2c94c;
+  --color-warn-yellow-hover: #ffdd75;
+  --color-warn-yellow-pressed: #ffdd75;
+  --color-label-secondary-bg: #999;
+  --color-buy-hover: #34c759;
+  --color-buy-pressed: #34c759;
+  --color-sell-hover: #ff3b30;
+  --color-sell-pressed: #ff3b30;
+  --color-white: #ffffff;
+  --color-positive-green-secondary-bg: rgba(52, 199, 89, 0.2);
+  --color-negative-red-secondary-bg: rgba(255, 59, 48, 0.2);
+  --color-warn-yellow-secondary-bg: rgba(242, 201, 76, 0.2);
+  --color-brand-yellow-secondary-bg: rgba(242, 201, 76, 0.2);
+  --color-interactive-secondary-bg: rgba(10, 132, 255, 0.12);
+  --color-grad_brand_2: #0a84ff;
+  --color-grad_brand_3: #0066cc;
+  --color-grad_primary_1: #0a84ff;
+  --color-grad_primary_2: #0066cc;
+  --color-grad_primary_3: #0055aa;
+  --color-grad_brand_1: #0a84ff;
+  --color-grad_brand_4: #0066cc;
+  --color-grad_brand_5: rgba(10, 132, 255, 0);
+  --color-white_20: rgba(255, 255, 255, 0.2);
+  --color-white_10: rgba(255, 255, 255, 0.1);
+  --color-white_0: rgba(255, 255, 255, 0);
+  --color-black_0: rgba(0, 0, 0, 0);
+  --color-grad_point_1: #0a84ff;
+  --color-grad_point_2: #0066cc;
+  --color-grad_point_3: #0055aa;
+  --color-grad_point_4: #0044aa;
+  --color-grad_fuel_1: #0a84ff;
+  --color-grad_fuel_2: #0066cc;
+  --color-grad_fuel_3: #0055aa;
+  --color-grad_fuel_4: #111;
+  --color-grad_fuel_5: #222;
+  --color-grad_fuel_6: #0a84ff;
+  --color-grad_fuel_7: #0066cc;
+  --color-grad_fuel_8: #222;
+}
+
+:root {
+  background-color: var(--color-background);
+  color: white;
+  scrollbar-width: none;
+}
+
+/* solana wallet adaptor custom styles */
+.wallet-adapter-button {
+  height: 35px !important;
+  color: white !important;
+  background-color: rgb(15 15 15) !important;
+  border: 1px;
+}
+
+.wallet-adapter-button:hover {
+  background-color: rgb(70, 70, 70) !important;
+}
+
+.wallet-adapter-modal-title {
+  background-color: rgb(15 15 15) !important;
+  border-radius: 10px !important;
+  color: white !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  background-color: rgb(15 15 15) !important;
+  padding-bottom: 20px;
+}
+
+.wallet-adapter-modal-button-close {
+  background-color: rgb(15 15 15) !important;
+}
+
+.wallet-adapter-dropdown-list {
+  background-color: rgb(15 15 15) !important;
+}
+
+.wallet-adapter-dropdown-list-item {
+  color: white !important;
+}
+
+.wallet-adapter-dropdown-list-item:hover {
+  color: white !important;
+  background-color: rgb(15 15 15) !important;
+}

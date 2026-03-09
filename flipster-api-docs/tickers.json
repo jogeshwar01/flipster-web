@@ -1,0 +1,24 @@
+{
+	"t": {
+		"market/tickers": {
+			"s": {
+				"BTCUSDT.PERP": {
+					"midPrice": "67291.45",
+					"markPrice": "67291.669354838709677419",
+					"indexPrice": "67325",
+					"fundingRate": "-0.000004648320054912",
+					"fundingTime": "1772985600000000000",
+					"priceChange24h": "-511.8",
+					"priceChangePct24h": "-0.7548310737317164",
+					"high24h": "68207.85",
+					"low24h": "66509.95",
+					"volume24h": "309.630863",
+					"turnover24h": "20890362.8689289",
+					"openInterest": "72.806722",
+					"openInterestInUsdt": "4899269.8931269"
+				}
+			}
+		}
+	},
+	"p": "1772957574207322693"
+}
